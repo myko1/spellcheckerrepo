@@ -4,8 +4,22 @@
              xmlns:local="clr-namespace:spellChecker"
              x:Class="spellChecker.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+	
+    <ContentPage.Content>
+        <StackLayout Padding="5,10">
+            <Label TextColor="#77d065" FontSize = "40" Text="Spell Checker" />
+          <Editor Text="Enter here"   HeightRequest="200" />
+            <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                <StackLayout Spacing="0"  Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button Text="Recent" VerticalOptions="Start"
+        HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Spacing="0"  Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Check" VerticalOptions="Start"
+        HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
