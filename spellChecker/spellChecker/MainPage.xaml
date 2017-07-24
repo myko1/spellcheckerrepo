@@ -4,21 +4,23 @@
              xmlns:local="clr-namespace:spellChecker"
              x:Class="spellChecker.MainPage">
 
-	
+
     <ContentPage.Content>
         <StackLayout Padding="5,10">
             <Label TextColor="#77d065" FontSize = "40" Text="Spell Checker" />
-          <Editor Text="Enter here"   HeightRequest="200" />
+            <Editor x:Name="text1" Text="Enter here"   HeightRequest="160" />
             <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
                 <StackLayout Spacing="0"  Orientation="Horizontal" HorizontalOptions="Start">
                     <Button Text="Recent" VerticalOptions="Start"
         HorizontalOptions="FillAndExpand" />
                 </StackLayout>
                 <StackLayout Spacing="0"  Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                    <Button Text="Check" VerticalOptions="Start"
+                    <Button x:Name ="button1" Text="Check" VerticalOptions="Start" Clicked="OnClick"
         HorizontalOptions="FillAndExpand" />
                 </StackLayout>
             </StackLayout>
+                        <Label x:Name="s" TextColor="#77d065" FontSize = "40" Text="Spell Checker" />
+            <Label x:Name="s1" TextColor="#77d065" FontSize = "40" Text="Spell Checker" />
         </StackLayout>
     </ContentPage.Content>
 
